@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nowoczesna Strona</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+
+
+    <!-- Zawartość strony -->
+    <div id="main-content" >
+      
+    <section class="hero">
+        <div class="container">
+            <div class="hero-background"></div>
+            <div class="hero-content">
+                <h1>Witamy na naszej stronie</h1>
+                <p>Nowoczesny design i profesjonalne rozwiązania w jednym miejscu</p>
+                <a href="#services" class="btn">Dowiedz się więcej</a>
+                <div >
+                    <!-- Przycisk do otwierania panelu logowania -->
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">O nas</h2>
+            <p class="text-center">
+                Jesteśmy liderem w branży technologicznej, oferując innowacyjne rozwiązania dla naszych klientów.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Nasze Usługi</h2>
+            <div class="services-wrapper">
+                <div class="service-box">
+                    <h3>Projektowanie</h3>
+                    <p>Tworzymy piękne, funkcjonalne strony internetowe.</p>
+                    
+                </div>
+                
+                <div class="service-box">
+                    <h3>Rozwój</h3>
+                    <p>Nasze aplikacje są szybkie, niezawodne i skalowalne.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Wsparcie</h3>
+                    <p>Zapewniamy pełne wsparcie techniczne dla naszych klientów.</p>
+                </div>
+                <div class="service-box">
+                    <h3>SEO</h3>
+                    <p>Optymalizujemy strony pod kątem wyszukiwarek.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Marketing</h3>
+                    <p>Tworzymy strategie marketingowe i kampanie online.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Analiza</h3>
+                    <p>Analizujemy dane i usprawniamy procesy biznesowe.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Bezpieczeństwo</h3>
+                    <p>Zabezpieczamy Twoje aplikacje i dane użytkowników.</p>
+                </div>
+                <div class="service-box">
+                    <h3>Design</h3>
+                    <p>Tworzymy unikalne projekty graficzne i identyfikację wizualną.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Skontaktuj się z nami</h2>
+            <form class="contact-form mx-auto" style="max-width: 600px;" action="mailto:maciej.selwet2008@gmail.com">
+                <input type="text" class="form-control" placeholder="Twoje imię" required>
+                <input type="email" class="form-control" placeholder="Twój e-mail" required>
+                <textarea class="form-control" rows="5" placeholder="Twoja wiadomość" required></textarea>
+                <button type="submit" class="btn btn-primary w-100">Wyślij wiadomość</button>
+            </form>
+        </div>
+    </section>
+
+    
+
+    
+            <!-- Admin Panel Content -->
+            <div id="admin-panel" class="admin-content" style="display: none;">
+                <h3>Dodaj zdjęcie</h3>
+                <form id="photo-upload-form">
+                    <input type="file" id="photo-upload" accept="image/*" required>
+                    <button type="submit" class="btn btn-primary mt-2">Dodaj zdjęcie</button>
+                </form>
+
+                <h3>Dodaj wpis</h3>
+                <form id="post-upload-form">
+                    <textarea id="post-content" class="form-control" rows="5" placeholder="Wprowadź treść wpisu" required></textarea>
+                    <button type="submit" class="btn btn-primary mt-2">Dodaj wpis</button>
+                </form>
+            </div>
+        </div>
+    </section>
+   
+
+
+    <div id="admin-section">
+        <!-- Przycisk pokazujący formularz -->
+        <button id="show-login-btn">Pokaż formularz logowania</button>
+    
+    <!-- Ukryty formularz logowania -->
+    <div id="login-form-container" class="hidden">
+        <form id="admin-login-form">
+            <h3>Logowanie administratora</h3>
+            <label for="username">Nazwa użytkownika:</label>
+            <input type="text" id="username" placeholder="Wprowadź nazwę użytkownika" required>
+            <label for="password">Hasło:</label>
+            <input type="password" id="password" placeholder="Wprowadź hasło" required>
+            <button type="submit">Zaloguj się</button>
+        </form>
+    </div>
+</div>
+</div>
+    
+    </section>
+</section>
+
+    
+    
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Galeria</h2>
+            <div id="gallery-content" class="gallery-wrapper">
+                <!-- Photos will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Posts Section -->
+    <section id="posts" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Wpisy</h2>
+            <div id="posts-content" class="posts-wrapper">
+                <!-- Posts will be displayed here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nowoczesna Strona. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+    <div id="service-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title">Tytuł usługi</h3>
+            <p id="modal-description">Opis usługi pojawi się tutaj...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
